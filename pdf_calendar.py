@@ -10,7 +10,7 @@ import collections
 from datetime import date
 import platform
 
-__author__ = "mc"
+__author__ = "Matthew Campbell"
 __date__ = "$May 13, 2012 5:32:26 PM$"
 
 from pdf_calendar_classes import *
@@ -182,20 +182,9 @@ def main():
   year = build_calendar(pdf)
 
   # Hightlight a days, months and days start at zero (0) not one (1).
-  year.months[7].days[19].highlighted = True
-  year.months[7].days[28].highlighted = True
-  year.months[8].days[14].highlighted = True
-  year.months[9].days[0].highlighted = True
-  year.months[9].days[7].highlighted = True
-  year.months[9].days[8].highlighted = True
 
-  year.months[10].days[14].highlighted = True
-  year.months[10].days[20].highlighted = True
-  year.months[10].days[21].highlighted = True
-  year.months[10].days[22].highlighted = True
+  year.months[4-1].days[1-1].highlighted = True
 
-  year.months[11].days[4].highlighted = True
-  year.months[11].days[14].highlighted = True
   
   context = draw_all(surface, year)
 
