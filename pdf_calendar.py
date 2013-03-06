@@ -38,7 +38,7 @@ def build_calendar(pdf):
   day_abbreviations = collections.deque(calendar.day_abbr)
   day_abbreviations.rotate(1)
 
-  year = Year(2012, pdf.get_drawable_width(), pdf.get_drawable_height())
+  year = Year(2013, pdf.get_drawable_width(), pdf.get_drawable_height())
   # Generate a year with months and days
   for count, m in enumerate(calendar.month_name):
     # The months start at index 1
